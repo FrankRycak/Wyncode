@@ -1,0 +1,94 @@
+# title of section
+# code paragraph
+# whitespace
+
+# tip calculator
+# bill = 40
+# num_people = 3
+# tip_percent = 0.20
+#
+# tip = bill * tip_percent
+# total = bill + tip
+# my_share = total / num_people
+# puts my_share
+
+# string interpolation
+# age = 17
+# puts "I'm " + age.to_s + " years old."
+# puts "I'm #{age} years old."
+# single-quotes doesn't interpolate
+# puts 'I\'m #{age * 20} years old.'
+
+# mutators
+# arr = [1,2,3,3]
+# arr.delete(3)
+# p arr
+# str = "abc"
+# str.upcase
+# p str
+# str.upcase!
+# p str
+
+# if/then
+# dead_people = ["Ethel", "Mortimer", "Buford"]
+# alive_people = ["Kelly", "Joe", "Megan"]
+# sick_people = alive_people.slice(0, 2)
+# p sick_people
+
+# p dead_people.include? 'Mortimer'
+# p dead_people.include? 'Kelly'
+# name = "Kelly"
+#
+# if dead_people.include?(name)
+#   puts "Don't send questionnaire to #{name}"
+# elsif sick_people.include?(name)
+#   puts "Don't send a questionnaire to #{name} yet."
+# else
+#   puts "Send questionnaire to #{name}"
+# end
+
+# name = "Kelly"
+#
+# if alive_people.include?(name)
+#   puts "Send questionnaire to #{name}"
+# end
+
+# name = "Kelly"
+#
+# unless dead_people.include?(name)
+#   puts "Send questionnaire to #{name}"
+# else true
+#   puts "hi"
+# end
+
+# if false
+#   i can put whatever I want here and Ruby doesnt care
+# else
+#   # blocks can be multiple lines
+#   puts "Hi"
+#   puts "Hello"
+# end
+
+# embedded ifs
+# if alive_people.include?(name)
+#   if sick_people.include?(name)
+#     puts "Send questionnaire to #{name} later"
+#   else
+#     puts "Send questionnaire to #{name} now"
+#   end
+# end
+
+
+# for name in alive_people
+#   puts "Send questionnaire to #{name}"
+# end
+
+# i = 0
+# while (i < 10) do
+#   puts i
+#   i -= 1
+#
+#   if ((i > 100) or (i < -100))
+#     break
+#   end
+# end
